@@ -1,0 +1,198 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #121212;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+header:hover {
+    background-color: #111; /* Adds a slight hover effect on the entire header */
+}
+.logo {
+    float: left;
+    font-size: 26px;
+    font-weight: 700;
+    color: #f4b400;
+}
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #f4b400;
+    color: #000;
+}
+nav ul li a.active {
+    background-color: #f4b400;
+    color: #000;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    nav ul {
+        display: none; /* For a simple mobile design */
+    }
+}
+ 
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+}
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero .highlight {
+    color: #f4b400;
+}
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.hero .btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f4b400;
+    margin-right: 10px;
+}
+.hero .btn.secondary {
+    background-color: #333;
+}
+.hero-image {
+    flex: 1;
+    text-align: right;
+    
+}
+.profile-image {
+    width: 280px;
+    border-radius: 50%;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    text-align: left;
+}
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Adds a small distance between the image and the text */
+}
+.about-image {
+    flex: 1;
+}
+.about-text {
+    flex: 2;
+}
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.about p {
+    margin-bottom: 40px;
+}
+.about ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+.about ul li {
+    margin-bottom: 10px;
+}
+.about .projects-complete {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Skills Section */
+.skills {
+    padding: 80px 0;
+    background-color: #333;
+    text-align: center;
+}
+.skills h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skill {
+    width: 30%;
+    margin-bottom: 30px;
+}
+.skill p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.progress {
+    background-color: #555;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress-bar {
+    height: 10px;
+    background-color: #f4b400;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+footer p {
+    color: #888;
+}
